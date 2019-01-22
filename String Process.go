@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strings"
+	"time"
 	"unicode"
 )
 
@@ -112,5 +113,7 @@ func main() {
 	fmt.Println(strings.ToLower("My LoCalhost Web")) // my localhost web
 	// ToUpper全部自動換成大寫
 	fmt.Println("字串前後去掉後面字串包含的文字")
-	fmt.Print(strings.Trim("¡¡¡Hello, !!!Evan!!!", "!¡")) // Hello, !!!Evan
+	fmt.Println(strings.Trim("¡¡¡Hello, !!!Evan!!!", "!¡")) // Hello, !!!Evan
+	currentTime := time.Now()
+	fmt.Println(currentTime)
 }
