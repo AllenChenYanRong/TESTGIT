@@ -114,6 +114,16 @@ func main() {
 	// ToUpper全部自動換成大寫
 	fmt.Println("字串前後去掉後面字串包含的文字")
 	fmt.Println(strings.Trim("¡¡¡Hello, !!!Evan!!!", "!¡")) // Hello, !!!Evan
+
+	fmt.Println("時間字串")
 	currentTime := time.Now()
 	fmt.Println(currentTime)
+	y := time.Now().Year()
+	m := time.Now().Month()
+	d := time.Now().Day()
+	h := time.Now().Hour()
+	min := time.Now().Minute()
+	s := time.Now().Second()
+	fmt.Printf("%d-%d-%d %d-%d-%d\n", y, m, d, h, min, s)
+	fmt.Println(y, m, d, h, min, s)
 }
