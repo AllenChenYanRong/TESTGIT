@@ -125,5 +125,5 @@ func main() {
 	min := time.Now().Minute()
 	s := time.Now().Second()
 	fmt.Printf("%d-%d-%d %d-%d-%d\n", y, m, d, h, min, s)
-	fmt.Println(y, m, d, h, min, s)
+	fmt.Println(y, m, d, h, min, s) //123
 }
